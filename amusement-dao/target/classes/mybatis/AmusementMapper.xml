@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jzd.amusement.dao.AmusementDAO">
+    <resultMap id="appOwnerMap" type="appOwner">
+        <id property="id" column="ID" javaType="long" jdbcType="NUMERIC"/>
+        <result property="almCode" column="APPLICATION_ID"/>
+        <result property="appName" column="APPLICATION_NAME"/>
+        <result property="abbreviation" column="SHORT_NAME"/>
+        <result property="ownerName" column="OWNER_EMP_NAME"/>
+        <result property="ownerMobile" column="OWNER_MOBILE"/>
+        <result property="ownerEmail" column="OWNER_EMAIL"/>
+    </resultMap>
+
+    <sql id="selectAllColumns">
+        SELECT
+        t.APPLICATION_ID,
+        t.APPLICATION_NAME,
+        t.SHORT_NAME,
+        t.OWNER_EMP_NAME,
+        t.OWNER_MOBILE,
+        t.OWNER_EMAIL
+        FROM ALM.V_APPLICATION_OWNER_INFO t
+    </sql>
+    <select id="getOwnerByScode" resultMap="appOwnerMap">
+        <include refid="selectAllColumns"/>
+        WHERE t.APPLICATION_ID = #{Scode}
+    </select>
+</mapper>

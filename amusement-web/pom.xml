@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>amusement</artifactId>
+        <groupId>com.jzd.amusement</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>amusement-web</artifactId>
+    <packaging>war</packaging>
+    <properties>
+        <chat.version>1.0.0-SNAPSHOT</chat.version>
+    </properties>
+	<build>
+		<finalName>amusement-web</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>8.1.11.v20130520</version>
+				<configuration>
+					<scanIntervalSeconds>0</scanIntervalSeconds>
+					<connectors>
+						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+							<port>8001</port>
+						</connector>
+					</connectors>
+					<!--<contextPath>/</contextPath>-->
+				</configuration>
+
+			</plugin>
+		</plugins>
+	</build>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jzd.amusement</groupId>
+            <artifactId>amusement-service</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
