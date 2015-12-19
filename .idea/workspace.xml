@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31759f92-1a33-4f09-9dcc-e63d8d66a344" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-dao/bin/target/classes/META-INF/maven/com.xiaomi.pos.order/order-dao/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-dao/bin/target/classes/META-INF/maven/com.xiaomi.pos.order/order-dao/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-dao/bin/target/classes/context/context-dao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-dao/bin/target/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-dao/bin/target/classes/mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-dao/bin/target/test-classes/context/context-dao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-dao/bin/target/test-classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-web/logs/applogs/db.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/amusement-web/logs/framework.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="amusement.iws" />
@@ -25,6 +36,7 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="amusement" />
   </component>
@@ -588,12 +600,12 @@
       <created>1450495781871</created>
       <option name="number" value="Default" />
       <updated>1450495781871</updated>
-      <workItem from="1450495785059" duration="596000" />
+      <workItem from="1450495785059" duration="984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="596000" />
+    <option name="totallyTimeSpent" value="984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
